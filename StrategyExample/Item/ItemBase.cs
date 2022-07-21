@@ -11,7 +11,7 @@ namespace StrategyExample.Item
         public string name { get; set; }
         public float selfcost { get; set; }
 
-        public IEatable eatableBehaviour { get; private set; }
+        public IEatable eatableBehaviour;
 
         public ItemBase() { }
 
@@ -24,7 +24,10 @@ namespace StrategyExample.Item
         }
 
         public void SetEatableBehaviour(IEatable ieatable) => eatableBehaviour = ieatable;
-        public void TryEat() => eatableBehaviour.Eat();
+        public void TryEat() { Console.WriteLine($"I try to eat \"{name}\""); eatableBehaviour.Eat(); }
+        public void Examine() {
+            string eatableState = eatableBehaviour.GetType().Equals(new Eatable().GetType()) ? "eatable" : "not eatable";
+            Console.WriteLine($"It's seems to be \"{name}\" and it's {eatableState}"); }
 
     }
 }
