@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StrategyExample.Item.Behaviours
+namespace StrategyExample.Item
 {
     public interface IEatable
     {
