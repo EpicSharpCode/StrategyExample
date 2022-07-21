@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Item\Behaviours\Food\Eatable.cs" />
+    <Compile Include="Item\Behaviours\Food\IEatable.cs" />
+    <Compile Include="Item\Food\Tomato.cs" />
+    <Compile Include="Item\Behaviours\Food\NotEatable.cs" />
+    <Compile Include="Item\Inventory.cs" />
+    <Compile Include="Item\ItemBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
