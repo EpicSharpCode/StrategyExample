@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace StrategyExample.Item.Behaviours
 {
-    internal class Eatable : IEatable
+    public interface IReadable
     {
-        public void Eat()
-        {
-            Console.WriteLine("Nom nom nom, very tasty!");
-        }
+        void Read();
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StrategyExample
+namespace StrategyExample.People
 {
     public class PeopleBase
     {
@@ -18,9 +18,11 @@ namespace StrategyExample
         {
             name = _name;
             birthday = _birthday;
-            Console.WriteLine($"I am {name}. My birthday {birthday.ToString("d")}");
+            ShowInfo();
 
             inventory = new Inventory(_inventoryCapacity);
         }
+
+        public void ShowInfo() => Console.WriteLine($"I am {name}. My birthday is {birthday.ToString("d")}.");
     }
 }

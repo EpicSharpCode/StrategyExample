@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StrategyExample.Item
+namespace StrategyExample.Item.Behaviours
 {
     public class NotEatable : IEatable
     {
