@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace StrategyExample.Item
 {
-    public class Tomato : ItemBase
+    internal class BurntBook : ItemBase
     {
-        public Tomato()
+        public BurntBook()
         {
-            name = "Tomato";
-            selfcost = 1;
-            SetEatableBehaviour(new Eatable());
+            name = "Burnt Book";
+            selfcost = 0;
+            SetReadableBehaviour(new NotReadable());
         }
     }
 }

@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Item\Behaviours\Books\IReadable.cs" />
+    <Compile Include="Item\Behaviours\Books\NotReadable.cs" />
+    <Compile Include="Item\Behaviours\Books\Readable.cs" />
     <Compile Include="Item\Behaviours\Food\Eatable.cs" />
     <Compile Include="Item\Behaviours\Food\IEatable.cs" />
+    <Compile Include="Item\Books\BurntBook.cs" />
+    <Compile Include="Item\Books\EatableBook.cs" />
+    <Compile Include="Item\Books\TheWhaleBook.cs" />
     <Compile Include="Item\Food\RottenApple.cs" />
     <Compile Include="Item\Food\Tomato.cs" />
     <Compile Include="Item\Behaviours\Food\NotEatable.cs" />
-    <Compile Include="Item\Inventory.cs" />
+    <Compile Include="People\Inventory.cs" />
     <Compile Include="Item\ItemBase.cs" />
     <Compile Include="People\PeopleBase.cs" />
     <Compile Include="Program.cs" />
@@ -57,5 +63,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

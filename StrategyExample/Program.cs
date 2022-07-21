@@ -1,4 +1,5 @@
 ﻿using StrategyExample.Item;
+using StrategyExample.People;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +15,36 @@ namespace StrategyExample
         public static void Main(string[] args)
         {
             characters.Add(new PeopleBase("Leo", new DateTime(1997, 10, 15), 10));
-            var man = characters[0];
-
+            var man = characters.Last();
+            OutputEmptyLine();
             man.inventory.AddItem(new Tomato());
-            man.inventory.items[0].Examine();
-            man.inventory.items[0].TryEat();
+            man.inventory.items.Last().Examine();
+            man.inventory.items.Last().TryEat();
+            man.inventory.items.Last().TryRead();
+            OutputEmptyLine();
             man.inventory.AddItem(new RottenApple());
-            man.inventory.items[1].Examine();
-            man.inventory.items[1].TryEat();
+            man.inventory.items.Last().Examine();
+            man.inventory.items.Last().TryEat();
+            man.inventory.items.Last().TryRead();
+            OutputEmptyLine();
+            man.inventory.AddItem(new BurntBook());
+            man.inventory.items.Last().Examine();
+            man.inventory.items.Last().TryEat();
+            man.inventory.items.Last().TryRead();
+            OutputEmptyLine();
+            man.inventory.AddItem(new TheWhaleBook());
+            man.inventory.items.Last().Examine();
+            man.inventory.items.Last().TryEat();
+            man.inventory.items.Last().TryRead();
+            OutputEmptyLine();
+            man.inventory.AddItem(new EatableBook());
+            man.inventory.items.Last().Examine();
+            man.inventory.items.Last().TryEat();
+            man.inventory.items.Last().TryRead();
 
             Console.ReadLine();
         }
+
+        public static void OutputEmptyLine() => Console.WriteLine();
     }
 }
