@@ -9,5 +9,6 @@ namespace StrategyExample.People
     internal interface IPeople
     {
         void ShowInfo();
+        Inventory GetInventory();
     }
 }

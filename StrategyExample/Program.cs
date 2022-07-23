@@ -10,7 +10,7 @@ namespace StrategyExample
 {
     internal class Program
     {
-        public static List<PeopleBase> characters = new List<PeopleBase>();
+        public static List<IPeople> characters = new List<IPeople>();
 
         public static void Main(string[] args)
         {
