@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StrategyExample.Item
 {
-    public class ItemBase
+    public abstract class ItemBase
     {
         public string name { get; set; }
         public float selfcost { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StrategyExample.People
 {
-    public class PeopleBase
+    public abstract class PeopleBase
     {
         public string name { get; private set; }
         public DateTime birthday { get; private set; }
