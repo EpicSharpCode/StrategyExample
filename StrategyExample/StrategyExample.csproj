@@ -56,6 +56,8 @@
     <Compile Include="Item\Behaviours\Food\NotEatable.cs" />
     <Compile Include="People\Inventory.cs" />
     <Compile Include="Item\ItemBase.cs" />
+    <Compile Include="People\IPeople.cs" />
+    <Compile Include="People\ManLeo.cs" />
     <Compile Include="People\PeopleBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

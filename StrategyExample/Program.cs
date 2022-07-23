@@ -14,33 +14,33 @@ namespace StrategyExample
 
         public static void Main(string[] args)
         {
-            characters.Add(new PeopleBase("Leo", new DateTime(1997, 10, 15), 10));
+            characters.Add(new ManLeo());
             var man = characters.Last();
             OutputEmptyLine();
-            man.inventory.AddItem(new Tomato());
-            man.inventory.items.Last().Examine();
-            man.inventory.items.Last().TryEat();
-            man.inventory.items.Last().TryRead();
+            man.GetInventory().AddItem(new Tomato());
+            man.GetInventory().items.Last().Examine();
+            man.GetInventory().items.Last().TryEat();
+            man.GetInventory().items.Last().TryRead();
             OutputEmptyLine();
-            man.inventory.AddItem(new RottenApple());
-            man.inventory.items.Last().Examine();
-            man.inventory.items.Last().TryEat();
-            man.inventory.items.Last().TryRead();
+            man.GetInventory().AddItem(new RottenApple());
+            man.GetInventory().items.Last().Examine();
+            man.GetInventory().items.Last().TryEat();
+            man.GetInventory().items.Last().TryRead();
             OutputEmptyLine();
-            man.inventory.AddItem(new BurntBook());
-            man.inventory.items.Last().Examine();
-            man.inventory.items.Last().TryEat();
-            man.inventory.items.Last().TryRead();
+            man.GetInventory().AddItem(new BurntBook());
+            man.GetInventory().items.Last().Examine();
+            man.GetInventory().items.Last().TryEat();
+            man.GetInventory().items.Last().TryRead();
             OutputEmptyLine();
-            man.inventory.AddItem(new TheWhaleBook());
-            man.inventory.items.Last().Examine();
-            man.inventory.items.Last().TryEat();
-            man.inventory.items.Last().TryRead();
+            man.GetInventory().AddItem(new TheWhaleBook());
+            man.GetInventory().items.Last().Examine();
+            man.GetInventory().items.Last().TryEat();
+            man.GetInventory().items.Last().TryRead();
             OutputEmptyLine();
-            man.inventory.AddItem(new EatableBook());
-            man.inventory.items.Last().Examine();
-            man.inventory.items.Last().TryEat();
-            man.inventory.items.Last().TryRead();
+            man.GetInventory().AddItem(new EatableBook());
+            man.GetInventory().items.Last().Examine();
+            man.GetInventory().items.Last().TryEat();
+            man.GetInventory().items.Last().TryRead();
 
             Console.ReadLine();
         }

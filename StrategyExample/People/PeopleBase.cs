@@ -7,22 +7,23 @@ using System.Threading.Tasks;
 
 namespace StrategyExample.People
 {
-    public abstract class PeopleBase
+    public abstract class PeopleBase : IPeople
     {
-        public string name { get; private set; }
-        public DateTime birthday { get; private set; }
+        protected string name;
+        protected DateTime birthday;
 
-        public Inventory inventory;
+        protected Inventory inventory;
+        protected int inventoryCapacity;
 
-        public PeopleBase(string _name, DateTime _birthday, int _inventoryCapacity)
+        public PeopleBase() { }
+
+        public void InitInventory()
         {
-            name = _name;
-            birthday = _birthday;
-            ShowInfo();
-
-            inventory = new Inventory(_inventoryCapacity);
+            inventory = new Inventory(inventoryCapacity);
         }
 
         public void ShowInfo() => Console.WriteLine($"I am {name}. My birthday is {birthday.ToString("d")}.");
+        public Inventory GetInventory() => inventory;
+        public string GetName() => name;
     }
 }
