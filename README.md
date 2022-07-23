@@ -1,5 +1,7 @@
 Repository with an example of using the "Strategy" pattern
 
+<b>Theme:</b> Inventory and Items
+
 <b>Main idea:</b> 
  
 ► INTERCHANGEABILITY
